@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Attanasio | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+
+    .personal-statement {
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+    }
+
+    .skill-tag {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* Projects List */
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #0f172a;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .personal-statement { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER & PERSONAL STATEMENT (2 Points) -->
+    <header>
+      <h1>Andrew Attanasio</h1>
+      <p class="personal-statement">
+        Driven web developer and analytical thinker dedicated to building responsive user interfaces, clean web applications, and data-driven solutions.
+      </p>
+    </header>
+
+    <main>
+      <!-- SKILLS SECTION (2 Points) -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-grid">
+          <li class="skill-tag">JavaScript (ES6+)</li>
+          <li class="skill-tag">HTML5 / CSS3</li>
+          <li class="skill-tag">Responsive Web Design</li>
+          <li class="skill-tag">Git / GitHub</li>
+          <li class="skill-tag">Statistical Analysis</li>
+          <li class="skill-tag">Data Visualization</li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS SECTION (2 Points) -->
+      <section id="projects">
+        <h2>Relevant Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3 class="project-title">Interactive Meal & Tip Calculator</h3>
+            <p class="project-desc">
+              A dynamic web application built using JavaScript and DOM manipulation that calculates custom meal totals, state sales tax, and customizable tip percentages in real-time.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/your-username/meal-tip-calculator" target="_blank" rel="noopener noreferrer" class="btn">View Repository</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3 class="project-title">Sports Public Health Research Analysis</h3>
+            <p class="project-desc">
+              A data-focused analytical study examining injury trends and protocol impacts in professional sports leagues, synthesizing public health metrics into structured findings.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/your-username/sports-health-analysis" target="_blank" rel="noopener noreferrer" class="btn">View Code / Paper</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3 class="project-title">Child Labor Regulations PSA Site</h3>
+            <p class="project-desc">
+              An educational web page informing parents and employers about United States Fair Labor Standards Act protections and workplace safety requirements.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/your-username/flsa-psa-site" target="_blank" rel="noopener noreferrer" class="btn">View Repository</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 Andrew Attanasio. Built for Portfolio Assignment.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
